@@ -4,8 +4,7 @@ import AboutData from './components/Aboutdata';
 import GlobalButton from '../../components/GlobalButton/GlobalButton';
 
 const About = () => {
-    let teamdata = [
-        {
+    let user = {
             id: 1,
             name: 'Deda',
             lastName: 'Slobo',
@@ -15,8 +14,7 @@ const About = () => {
             address: 'Banja Luka',
             freelance: 'Available'
 
-        }
-    ]
+        };
 
 
     return (
@@ -27,18 +25,16 @@ const About = () => {
                     <img src={about} alt="My profile image"/>
                 </div>
                 <div className='about_data'>
-                    {teamdata.map((card) => (
-                        <AboutData
-                            key={card.id}
-                            name={card.name}
-                            lastName={card.lastName}
-                            age={card.age}
-                            nationality={card.nationality}
-                            languages={card.languages}
-                            address={card.address}
-                            freelance={card.freelance}
-                        />
-                    ))}
+                    <AboutData
+                        key={user.id}
+                        name={user.name}
+                        lastName={user.lastName}
+                        age={user.age}
+                        nationality={user.nationality}
+                        languages={user.languages}
+                        address={user.address}
+                        freelance={user.freelance}
+                    />
                     <div className='button'>
                         <GlobalButton text="Download Resume" link="/" />
                     </div>
