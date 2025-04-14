@@ -1,0 +1,14 @@
+.global_button {
+    color: white;
+    background-color: #a37e2c;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.global_button:hover {
+    cursor: pointer;
+}

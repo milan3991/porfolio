@@ -1,0 +1,6 @@
+table {
+    border-spacing: 0 10px; 
+}
+td:first-child {
+    padding-right: 50px;
+}

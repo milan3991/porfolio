@@ -1,0 +1,58 @@
+.about_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.about_wrapper h1 {
+    font-size: 45px;
+    margin-bottom: 100px;
+}
+
+.about_page {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    text-align: left;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.glow-frame {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #a37e2c, #006039,#a37e2c, #006039);
+    background-size: 300% 300%;
+    animation: gradientGlow 5s ease infinite;
+  }
+
+  .glow-frame img {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  @keyframes gradientGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.button {
+    margin-top: 30px;
+}
