@@ -1,0 +1,35 @@
+.works_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    text-align: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.works_wrapper h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.filter {
+    display: flex;
+    gap: 15px;
+}
+
+.works_page {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    text-align: left;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 150px;  
+    flex-wrap: wrap;  
+}
+
+.work_item img {
+    max-width: 200px;
+}
