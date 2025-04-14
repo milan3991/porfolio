@@ -3,7 +3,7 @@ import './style.aboutdata.css'
 const AboutData = ({ name, lastName, age, nationality, languages, address, freelance }) => {
     return (
         <div>
-            <h3>Hi, I am Deda Slobo!</h3>
+            <h2>Hi, I am Deda Slobo!</h2>
 
             <table>
                 <tr>
