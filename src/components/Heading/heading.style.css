@@ -1,0 +1,52 @@
+.naslov_container {
+    width: 100%;
+    position: relative;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px; 
+  }
+  
+  .naslov_pozadina {
+    position: absolute;
+    top: 0;
+    font-size: 155px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.05;
+    line-height: 1;
+  }
+  
+  .naslov_prednji {
+    font-size: 65px;
+    font-weight: bold;
+    color: black;
+    z-index: 1;
+    margin: 0;
+    line-height: 1;
+  }
+
+
+  .linija {
+    width: 250px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 10px;
+    z-index: 1;
+    background: linear-gradient(45deg, #a37e2c, #006039, #a37e2c, #006039);
+    background-size: 300% 300%;
+    animation: gradientGlow 7s ease infinite;
+  }
+
+  @keyframes gradientGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
