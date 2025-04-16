@@ -26,6 +26,15 @@
     flex-wrap: wrap;  
 }
 
-.work_item img {
-    max-width: 200px;
+.work_part {
+    background-color: #f0fef9;
+    padding: 10px;
+}
+
+.work_part img {
+    max-width: 400px;
+}
+
+.work_part img:hover {
+    cursor: pointer;
 }

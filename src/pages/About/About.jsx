@@ -51,7 +51,7 @@ const About = () => {
                         freelance={user.freelance}
                     />
                     <div className='button'>
-                        <GlobalButton text="Download Resume" handleClick={handleDownload} />
+                        <GlobalButton text="Download Resume" handleClick={handleDownload} className = 'global_button'/>
                     </div>
                 </div>
             </div>

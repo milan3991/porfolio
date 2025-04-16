@@ -1,0 +1,99 @@
+.form_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  
+}
+
+.form_input {
+    font-size: 20px;
+
+}
+
+.form_input_fields {
+    display: flex;
+    gap: 10px;
+
+}
+
+.form_section_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_input {
+    width: 450px;
+    height: 60px;
+    border: 1px solid #006039;
+    background-color: white;
+    color:black
+
+}
+
+.form_input_fields textarea {
+    width: 550px;
+    border: 1px solid #006039;
+    background-color: white;
+
+}
+
+
+.form_input::placeholder {
+    color: rgb(118, 116, 116); 
+}
+
+textarea::placeholder {
+    color: rgb(118, 116, 116);
+    font-size: 24px;
+}
+
+textarea {
+    color: black;
+}
+
+.form_input:focus {
+    outline: none;
+    border: 1px solid #006039; 
+    box-shadow: 0 0 5px #006039; 
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #006039;
+    box-shadow: 0 0 5px #006039;
+}
+
+
+.contact_button {
+    color: white;
+    background-color: #a37e2c;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-weight: bold;
+    border: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, #a37e2c, #006039, #a37e2c, #006039);
+    background-size: 300% 300%;
+    transition: background-position 0.5s ease;
+    margin-top: 40px;
+}
+
+.contact_button:hover {
+    animation: gradientGlow 7s ease infinite;
+    cursor: pointer;
+}
+
+@keyframes gradientGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
