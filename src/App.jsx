@@ -5,6 +5,7 @@ import Contact from "./pages/Contact/Contact"
 import NotFound from "./pages/NotFound/NotFount"
 import Works from "./pages/Works/Works"
 import Navigation from "./components/Navigation/Navigation"
+import Test from "./pages/Test/Test"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/works" element={<Works />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </Router>
   )

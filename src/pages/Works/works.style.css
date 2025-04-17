@@ -1,0 +1,40 @@
+.works_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    text-align: center;
+    flex: 1;
+    justify-content: center;
+}
+
+
+.filter {
+    display: flex;
+    gap: 15px;
+}
+
+.works_page {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    text-align: left;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 150px;  
+    flex-wrap: wrap;  
+}
+
+.work_part {
+    background-color: #f0fef9;
+    padding: 10px;
+}
+
+.work_part img {
+    max-width: 400px;
+}
+
+.work_part img:hover {
+    cursor: pointer;
+}

@@ -4,36 +4,49 @@ const AboutData = ({ name, lastName, age, nationality, languages, address, freel
     return (
         <div>
             <h2>Hi, I am Deda Slobo!</h2>
-
             <table>
-                <tr>
-                    <td>• First Name</td>
-                    <td>: {name}</td>
-                </tr>
-                <tr>
-                    <td>• Last Name</td>
-                    <td>: {lastName}</td>
-                </tr>
-                <tr>
-                    <td>• Age</td>
-                    <td>: {age}</td>
-                </tr>
-                <tr>
-                    <td>• Nationality</td>
-                    <td>: {nationality}</td>
-                </tr>
-                <tr>
-                    <td>• Languages</td>
-                    <td>: {languages}</td>
-                </tr>
-                <tr>
-                    <td>• Address</td>
-                    <td>: {address}</td>
-                </tr>
-                <tr>
-                    <td>• Freelance</td>
-                    <td>: {freelance}</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>• First Name</td>
+                        <td>: {name}</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>• Last Name</td>
+                        <td>: {lastName}</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>• Age</td>
+                        <td>: {age}</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>• Nationality</td>
+                        <td>: {nationality}</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>• Languages</td>
+                        <td>: {languages}</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>• Address</td>
+                        <td>: {address}</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>• Freelance</td>
+                        <td>: {freelance}</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     )

@@ -1,14 +1,11 @@
 import React from 'react';
 import './style.globalbutton.css';
-import { Link } from 'react-router-dom';
 
-const GlobalButton = ({ text, link }) => {
+const GlobalButton = ({ text, handleClick, className }) => {
   return (
-    <Link to={link}>
-      <button className="global_button">
-        {text}
-      </button>
-    </Link>
+    <button className={className} onClick={handleClick}>
+      {text}
+    </button>
   );
 };
 
