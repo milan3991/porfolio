@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.globalbutton.css';
 
-const GlobalButton = ({ text, handleClick, className = '' }) => {
+const GlobalButton = ({ text, handleClick, className }) => {
   return (
-    <button className={`${className}`} onClick={handleClick}>
+    <button className={className} onClick={handleClick}>
       {text}
     </button>
   );
