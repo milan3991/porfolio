@@ -1,20 +1,12 @@
-import GlobalButton from '../../../components/GlobalButton/GlobalButton';
-import './contactform.style.css'
+import '../contact.style.css'
 
-const ContactForm = () => {
+const ContactInputField = ({ displayName, name, id, type, placeholder}) => {
     return (
-        <div className='form_wrapper'>
-            <div className='form_input_fields'>
-                <section className='form_section_fields'>
-                    <input className='form_input' type='text' placeholder='Your Name *'></input>
-                    <input className='form_input' type='text' placeholder='Your Email *'></input>
-                    <input className='form_input' type='text' placeholder='Your Phone *'></input>
-                </section>
-                <textarea placeholder='Your Messange *'></textarea>
-            </div>
-            <GlobalButton text="SEND MESSAGE" className = 'contact_button' />
+        <div className='contact_input_field'>
+            <label htmlFor={ id }>{ displayName }</label>
+            <input id={ id } name={ name } type={ type } placeholder={ placeholder } required></input>
         </div>
     );
 };
 
-export default ContactForm;
+export default ContactInputField;

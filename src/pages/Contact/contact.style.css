@@ -1,20 +1,132 @@
-.contact_wrapper {
+.contact_box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 30px;
     width: 100%;
-    flex: 1;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1700px;
-    margin: 0px auto;
-    margin-top: 100px;
+    max-width: 1900px;
 }
 
-.contact_main {
+.contact_left {
+    width: 40%;
+}
+
+.contact_right {
+    width: 50%;
+    padding-top: 0!important;
+}
+
+.contact_layout_box {
+    border: 1px solid #056766;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+
+.contact_method_icon {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.contact_method {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact_method_info h5 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contact_method_info p {
+    margin: 0;
+}
+
+.contact_input_field {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 20px 0;
 }
+
+.contact_input_field label {
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
+.contact_input_field input {
+    padding: 10px;
+    border: 1px solid #006039;
+    border-radius: 5px;
+    color: inherit;
+    font-size: 16px;
+    background-color: white;
+}
+
+
+.contact_input_field input:focus {
+    outline: 1px solid #006039;
+}
+
+.contact_button {
+    color: white;
+    background-color: #a37e2c;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, #a37e2c, #006039, #a37e2c, #006039);
+    background-size: 300% 300%;
+    transition: background-position 0.5s ease;
+    margin-top: 15px;
+}
+
+.contact_button:hover {
+    animation: gradientGlow 7s ease infinite;
+    cursor: pointer;
+}
+
+@keyframes gradientGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contact_right textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #006039;
+    background-color: white;
+
+}
+
+.contact_right textarea:focus {
+    outline: 1px solid #006039;
+}
+
+
+.contact_right::placeholder {
+    color: rgb(118, 116, 116); 
+}
+
+textarea::placeholder {
+    color: rgb(118, 116, 116);
+    font-size: 24px;
+}
+
+textarea {
+    color: black;
+}
+
 
