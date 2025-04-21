@@ -46,8 +46,6 @@ const Contact = () => {
                 <div className="contact_left contact_layout_box">
                     <h4 className='contact_header'>Contact information</h4>
                     <p className='contact_text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam autem deserunt officia blanditiis consequuntur neque nulla atque voluptatibus soluta eum cumque vitae aliquid, maxime quibusdam, dolorum impedit explicabo sit eligendi.</p>
-                    <div className='contact_underline'></div>
-
                     {contactInformations.map((contactinfo) => {
                         return (
                             <ContactMethod
