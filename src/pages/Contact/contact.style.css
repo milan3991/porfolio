@@ -3,7 +3,7 @@
     justify-content: center;
     gap: 30px;
     width: 100%;
-    max-width: 1900px;
+    max-width: 1500px;
 }
 
 .contact_left {
@@ -87,7 +87,7 @@
 }
 
 .contact_button:hover {
-    animation: gradientGlow 7s ease infinite;
+    animation: gradientGlow 3s ease infinite;
     cursor: pointer;
 }
 

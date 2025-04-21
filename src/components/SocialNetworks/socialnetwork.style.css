@@ -11,3 +11,11 @@
     padding: 2px;
     border-radius: 10px;
 }
+
+.social_networks a {
+    transition: transform 0.3s ease;
+}
+
+.social_networks a:hover {
+    transform: translateX(-5px);
+}
