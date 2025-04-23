@@ -44,3 +44,43 @@
     margin-left: 110px;
     margin-top: 5px;
   }
+
+  @media screen and (max-width: 1250px) {
+    .navigation_wrapper {
+      width: 95%;
+    }
+    .navigation_wrapper span a {
+      padding: 5px 10px;
+    }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .navigation_wrapper {
+    min-height: 5vh;
+  }
+
+  .navigation_wrapper span a {
+    padding: 3px 7px;
+    font-size: 14px;
+  }
+  .navigation_list {
+    gap: 10px;
+  }
+  .navigation img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .navigation_wrapper span a {
+    font-size: 10px;
+  }
+  .navigation_list a {
+    font-size: 14px;
+  }
+
+
+}
