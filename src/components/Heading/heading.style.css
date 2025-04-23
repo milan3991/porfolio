@@ -50,3 +50,48 @@
       background-position: 0% 50%;
     }
   }
+
+  @media screen and (max-width: 750px) {
+    .naslov_container {
+      width: 95%;
+      height: 100px;
+      padding-top: 92px; 
+    }
+    
+    .naslov_pozadina {
+      top: 0;
+      font-size: 115px;
+      opacity: 0.05;
+    }
+    
+    .naslov_prednji {
+      font-size: 45px;
+    }
+  
+  
+    .linija {
+      width: 200px;
+    }  
+  
+}
+
+@media screen and (max-width: 450px) {
+  .naslov_container {
+    width: 95%;
+    padding-top: 67px; 
+  }
+  
+  .naslov_pozadina {
+    font-size: 85px;
+  }
+  
+  .naslov_prednji {
+    font-size: 35px;
+  }
+
+
+  .linija {
+    width: 150px;
+  }  
+
+}

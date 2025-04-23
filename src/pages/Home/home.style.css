@@ -14,3 +14,29 @@
     border-radius: 50%;
     border: 7px solid #a37e2c;
 }
+
+@media screen and (max-width: 900px) {
+    .home_wrapper {
+        width: 90%;
+        flex: 0;
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home_wrapper {
+        margin-top: 100px;
+    }
+    .home_wrapper h1{
+        font-size: 24px;
+    }
+    .home_wrapper p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .home_wrapper {
+        margin-top: 50px;
+    }
+}

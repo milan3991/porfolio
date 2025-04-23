@@ -19,3 +19,22 @@
 .social_networks a:hover {
     transform: translateX(-5px);
 }
+
+@media screen and (max-width: 900px) {
+    .social_networks {
+        margin-top: 5vh;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social_networks {
+        gap: 20px;        
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .social_networks {
+        gap: 15px;        
+    }
+}

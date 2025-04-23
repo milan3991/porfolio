@@ -13,7 +13,7 @@
 
 .contact_right {
     width: 50%;
-    padding-top: 0!important;
+    padding-top: 0 !important;
 }
 
 .contact_layout_box {
@@ -96,9 +96,11 @@
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -118,7 +120,7 @@
 
 
 .contact_right::placeholder {
-    color: rgb(118, 116, 116); 
+    color: rgb(118, 116, 116);
 }
 
 textarea::placeholder {
@@ -146,9 +148,11 @@ textarea {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -167,9 +171,11 @@ textarea {
     0% {
         transform: translateX(0);
     }
+
     50% {
         transform: translateX(10px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -186,17 +192,108 @@ textarea {
 }
 
 @keyframes vibrate {
-    0% { transform: translateX(0); }
-    10% { transform: translateX(-2px); }
-    20% { transform: translateX(2px); }
-    30% { transform: translateX(-2px); }
-    40% { transform: translateX(2px); }
-    50% { transform: translateX(-2px); }
-    60% { transform: translateX(2px); }
-    70% { transform: translateX(-2px); }
-    80% { transform: translateX(2px); }
-    90% { transform: translateX(-2px); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-2px);
+    }
+
+    20% {
+        transform: translateX(2px);
+    }
+
+    30% {
+        transform: translateX(-2px);
+    }
+
+    40% {
+        transform: translateX(2px);
+    }
+
+    50% {
+        transform: translateX(-2px);
+    }
+
+    60% {
+        transform: translateX(2px);
+    }
+
+    70% {
+        transform: translateX(-2px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+
+    90% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* Kraj animacija za slicice u kontakt boxu*/
+
+@media screen and (max-width: 1000px) {
+
+    .contact_box {
+        margin: 5px;
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .contact_box {
+        flex-wrap: wrap;
+    }
+
+    .contact_left {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .contact_right {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .naslov_container {
+        width: 95%;
+        padding-top: 60px;
+    }
+
+    .naslov_pozadina {
+        font-size: 75px;
+    }
+
+    .naslov_prednji {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .naslov_container {
+        padding-top: 52px;
+    }
+
+    .naslov_pozadina {
+        font-size: 65px;
+    }
+
+    .naslov_prednji {
+        font-size: 25px;
+    }
+    textarea::placeholder {
+        font-size: 20px;
+    }
+
+  
+}
