@@ -80,7 +80,7 @@ const Contact = () => {
                         type='text'
                         placeholder='Enter subject...'
                     />
-                    <textarea placeholder='Your Messange *' className='contact_input_field'></textarea>
+                    <textarea placeholder='Your Message *' className='contact_input_field'></textarea>
                     <div>
                         <GlobalButton text="SEND MAIL" className='contact_button' />
                     </div>

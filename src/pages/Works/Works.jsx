@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import GlobalButton from "../../components/GlobalButton/GlobalButton";
 import Heading from "../../components/Heading/Heading";
 import WorksItem from "./components/WorksData";
@@ -10,7 +11,7 @@ import usb from '../../assets/usb.jpg';
 import headphones from '../../assets/headphones.jpg';
 
 const Works = () => {
-
+    const [selectedCategory, setSelectedCategory] = useState('all');
     let articles = [
         {
             id: 1,
@@ -55,19 +56,27 @@ const Works = () => {
             text: 'Lorem ipsum dolor',
         },
 
-    ]
+    ];
+    const filteredArticles = selectedCategory === 'all'
+    ? articles
+    : articles.filter(article => article.category === selectedCategory);
+
+const handleFilter = (category) => {
+    setSelectedCategory(category);
+};
+
     return (
         <div className="works_wrapper">
             <Heading heading="MY WORKS" headingbackground="WORKS"/>
             <div className="filter">
-                <GlobalButton text="All" className = 'global_button'/>
-                <GlobalButton text="Camera"className = 'global_button'/>
-                <GlobalButton text="USB" className = 'global_button'/>
-                <GlobalButton text="Light"className = 'global_button'/>
-                <GlobalButton text="Headphones" className = 'global_button'/>
+                <GlobalButton text="All" className = 'global_button' handleClick={() => handleFilter('all')}/>
+                <GlobalButton text="Camera"className = 'global_button' handleClick={() => handleFilter('camera')}/>
+                <GlobalButton text="USB" className = 'global_button' handleClick={() => handleFilter('usb')}/>
+                <GlobalButton text="Light"className = 'global_button' handleClick={() => handleFilter('light')}/>
+                <GlobalButton text="Headphones" className = 'global_button' handleClick={() => handleFilter('headphones')}/>
             </div>
             <div className="works_page">
-                {articles.map((article) => (
+                {filteredArticles.map((article) => (
                     <WorksItem
                         key={article.id}
                         image={article.image}
