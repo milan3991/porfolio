@@ -1,6 +1,6 @@
 import './about.style.css'
 import about from '../../assets/aboutimage.png';
-import AboutData from './components/Aboutdata';
+import AboutData from './components/AboutData';
 import GlobalButton from '../../components/GlobalButton/GlobalButton';
 import Heading from '../../components/Heading/Heading';
 
