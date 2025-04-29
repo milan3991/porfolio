@@ -57,9 +57,7 @@ const Works = () => {
         },
 
     ];
-    const filteredArticles = selectedCategory === 'all'
-    ? articles
-    : articles.filter(article => article.category === selectedCategory);
+    const filteredArticles = selectedCategory === 'all' ? articles : articles.filter(article => article.category === selectedCategory);
 
 const handleFilter = (category) => {
     setSelectedCategory(category);
