@@ -39,6 +39,12 @@
     cursor: pointer;
 }
 
+.active_button {
+    box-shadow: 0 0 15px #a37e2c; 
+    transition: box-shadow 0.3s ease;
+    background-color: white;
+    color: #a37e2c;
+}
 
 @media screen and (max-width: 600px) {
 

@@ -67,11 +67,11 @@ const handleFilter = (category) => {
         <div className="works_wrapper">
             <Heading heading="MY WORKS" headingbackground="WORKS"/>
             <div className="filter">
-                <GlobalButton text="All" className = 'global_button' handleClick={() => handleFilter('all')}/>
-                <GlobalButton text="Camera"className = 'global_button' handleClick={() => handleFilter('camera')}/>
-                <GlobalButton text="USB" className = 'global_button' handleClick={() => handleFilter('usb')}/>
-                <GlobalButton text="Light"className = 'global_button' handleClick={() => handleFilter('light')}/>
-                <GlobalButton text="Headphones" className = 'global_button' handleClick={() => handleFilter('headphones')}/>
+                <GlobalButton text="All" className={`global_button ${selectedCategory === 'all' ? 'active_button' : ''}`} handleClick={() => handleFilter('all')}/>
+                <GlobalButton text="Camera" className={`global_button ${selectedCategory === 'camera' ? 'active_button' : ''}`} handleClick={() => handleFilter('camera')}/>
+                <GlobalButton text="USB" className={`global_button ${selectedCategory === 'usb' ? 'active_button' : ''}`} handleClick={() => handleFilter('usb')}/>
+                <GlobalButton text="Light" className={`global_button ${selectedCategory === 'light' ? 'active_button' : ''}`} handleClick={() => handleFilter('light')}/>
+                <GlobalButton text="Headphones" className={`global_button ${selectedCategory === 'headphones' ? 'active_button' : ''}`} handleClick={() => handleFilter('headphones')}/>
             </div>
             <div className="works_page">
                 {filteredArticles.map((article) => (
